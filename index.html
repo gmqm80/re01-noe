@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>初三四班</title>
+    <p style="text-align: center">
+      <a href="https://trollweb.pages.dev/(?_wv=1">访问链接</a>来源：刘仁刚
+    </p>
+  </head>
+  <script>
+    var pwd = prompt("请输入自己的名字");
+    if (!pwd) {
+      window.close();
+    }
+    alert("正在验证身份...");
+    {
+      if (
+        [
+          "吴嘉琪",
+          "罗艺洋",
+          "谭海燕",
+          "吴超",
+          "易治杰",
+          "张定春",
+          "杨儒涛",
+          "王瑞",
+          "黄玉婷",
+          "陈明阳",
+          "彭鑫悦",
+          "颜靖",
+          "吴浩然",
+          "程正圣",
+          "程熙文",
+          "王秋婷",
+          "罗骄",
+          "彭红福",
+          "王庆博",
+          "吴楠",
+          "杨刚",
+          "杨凌轩",
+          "刘思瑶",
+          "李浩宇",
+          "黄俊",
+          "蒲美丽",
+          "刘仁刚",
+          "杨欣怡",
+          "易君浩",
+          "覃宇林",
+          "刘梦琪",
+          "罗吉睿",
+          "彭和龙",
+          "冉伟",
+          "雷燕",
+          "王涛",
+          "朱婷",
+          "童嘉欣",
+          "韩正萍",
+          "王语彤",
+          "郑昌品",
+          "覃悦",
+          "卓鑫",
+          "覃孟",
+          "姚威",
+          "余永洪",
+          "陶燕",
+          "陈艳",
+          "杨诗勇",
+          "吴超",
+          "谭国涛",
+          "罗艺洋",
+
+          "1234",
+        ].includes(pwd?.trim())
+      ) {
+        alert("欢迎" + pwd + "同学");
+      } else {
+        alert("身份验证失败");
+        window.close();
+        history.go(-1);
+      }
+    }
+  </script>
+  <body>
+    <style>
+      body {
+        background: url("df.jpg") no-repeat center center fixed;
+        background-size: cover;
+        color: #333;
+      }
+    </style>
+    <h1 style="text-align: center">初三四班</h1>
+    <p style="text-align: center">欢迎来到初三四班的主页！</p>
+    <div id="countdown" style="text-align: center">
+      <h2>距离中考还有：</h2>
+      <p id="countdown-timer" style="font-size: 24px; font-weight: bold"></p>
+    </div>
+    <div
+      style="
+        text-align: center;
+        color: #001a33;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px auto;
+        width: 80%;
+      "
+    >
+      <h1>班级成员名单：</h1>
+      <ul style="list-style-type: none; padding: 0; columns: 2; gap: 20px">
+        <li>吴嘉琪</li>
+        <li>罗艺洋</li>
+        <li>谭海燕</li>
+        <li>吴超</li>
+        <li>易治杰</li>
+        <li>张定春</li>
+        <li>杨儒涛</li>
+        <li>陶燕</li>
+        <li>王瑞</li>
+        <li>黄玉婷</li>
+        <li>陈明阳</li>
+        <li>彭鑫悦</li>
+        <li>颜靖</li>
+        <li>吴浩然</li>
+        <li>程正圣</li>
+        <li>程熙文</li>
+        <li>王秋婷</li>
+        <li>罗骄</li>
+        <li>彭红福</li>
+        <li>王庆博</li>
+        <li>吴楠</li>
+        <li>杨刚</li>
+        <li>杨凌轩</li>
+        <li>刘思瑶</li>
+        <li>李浩宇</li>
+        <li>蒲美丽</li>
+        <li>黄俊</li>
+        <li>刘仁刚</li>
+        <li>杨欣怡</li>
+        <li>易君浩</li>
+        <li>覃宇林</li>
+        <li>刘梦琪</li>
+        <li>罗吉睿</li>
+        <li>彭和龙</li>
+        <li>冉伟</li>
+        <li>雷燕</li>
+        <li>王涛</li>
+        <li>朱婷</li>
+        <li>童嘉欣</li>
+        <li>韩正萍</li>
+        <li>王语彤</li>
+        <li>覃悦</li>
+        <li>卓鑫</li>
+        <li>覃孟</li>
+        <li>姚威</li>
+        <li>余永洪</li>
+
+        <li>陈艳</li>
+        <li>杨诗勇</li>
+        <li>吴超</li>
+        <li>谭国涛</li>
+        <li>罗艺洋</li>
+        <li>郑昌品</li>
+      </ul>
+    </div>
+    <script>
+      // 设置中考日期
+      var examDate = new Date("2026-06-11T00:00:00");
+
+      function updateCountdown() {
+        var now = new Date();
+        var timeDiff = examDate - now;
+
+        if (timeDiff <= 0) {
+          document.getElementById("countdown-timer").innerHTML =
+            "中考已开始！加油！";
+          clearInterval(countdownInterval);
+          return;
+        }
+
+        var days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+        );
+        var minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+
+        document.getElementById("countdown-timer").innerHTML =
+          days + "天 " + hours + "小时 " + minutes + "分钟 " + seconds + "秒";
+      }
+
+      // 每秒更新一次倒计时
+      var countdownInterval = setInterval(updateCountdown, 1000);
+
+      // 初始化倒计时显示
+      updateCountdown();
+    </script>
+    <img
+      style="display: block; margin-left: auto; margin-right: auto"
+      src="sa.jpg"
+      width="400"
+      height="200"
+    />
+    <p
+      style="
+        text-align: center;
+        color: #001a33;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+        border-radius: 10px;
+        margin: 10px auto;
+        width: 300px;
+      "
+    >
+      图片来源：刘思瑶
+    </p>
+    <p
+      style="
+        text-align: center;
+        color: #001a33;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+        border-radius: 10px;
+        margin: 10px auto;
+        width: 300px;
+      "
+    >
+      祝福语：愿我们在中考中发挥出色，取得优异的成绩！加油，初三四班的同学们！
+      
+    </p>
+    <p
+      style="
+        text-align: center;
+        color: #001a33;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+        border-radius: 10px;
+        margin: 10px auto;
+        width: 300px;
+      "
+    >
+      本网站还需改进，请提出改进意见！
+    </p>
+  </body>
+</html>
