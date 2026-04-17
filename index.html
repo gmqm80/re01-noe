@@ -2,295 +2,287 @@
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
-    <title>初三四班</title>
-    <p style="text-align: center">
-      <a href="https://trollweb.pages.dev/(?_wv=1">访问链接</a>来源：刘仁刚
-    </p>
-  </head>
-  <script>
-    var pwd = prompt("请输入自己的名字");
-    if (!pwd) {
-      window.close();
-    }
-    alert("正在验证身份...");
-    {
-      if (
-        [
-          "吴嘉琪",
-          "罗艺洋",
-          "谭海燕",
-          "吴超",
-          "易治杰",
-          "张定春",
-          "杨儒涛",
-          "王瑞",
-          "黄玉婷",
-          "陈明阳",
-          "彭鑫悦",
-          "颜靖",
-          "吴浩然",
-          "程正圣",
-          "程熙文",
-          "王秋婷",
-          "罗骄",
-          "彭红福",
-          "王庆博",
-          "吴楠",
-          "杨刚",
-          "杨凌轩",
-          "刘思瑶",
-          "李浩宇",
-          "黄俊",
-          "蒲美丽",
-          "刘仁刚",
-          "杨欣怡",
-          "易君浩",
-          "覃宇林",
-          "刘梦琪",
-          "罗吉睿",
-          "彭和龙",
-          "冉伟",
-          "雷燕",
-          "王涛",
-          "朱婷",
-          "童嘉欣",
-          "韩正萍",
-          "王语彤",
-          "郑昌品",
-          "覃悦",
-          "卓鑫",
-          "覃孟",
-          "姚威",
-          "余永洪",
-          "陶燕",
-          "陈艳",
-          "杨诗勇",
-          "吴超",
-          "谭国涛",
-          "罗艺洋",
-
-          "1234",
-        ].includes(pwd?.trim())
-      ) {
-        alert("欢迎" + pwd + "同学");
-      } else {
-        alert("身份验证失败");
-        window.close();
-        history.go(-1);
-      }
-    }
-  </script>
-  <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>一个???的日子</title>
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
       body {
-        background: url("df.jpg") no-repeat center center fixed;
-        background-size: cover;
+        font-family: "Arial", sans-serif;
+        background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         color: #333;
       }
-    </style>
-    <h1 style="text-align: center">初三四班</h1>
-    <p style="text-align: center">欢迎来到初三四班的主页！</p>
-    <div id="countdown" style="text-align: center">
-      <h2>距离中考还有：</h2>
-      <p id="countdown-timer" style="font-size: 24px; font-weight: bold"></p>
-    </div>
-    <div
-      style="
-        text-align: left;
-        color: #001a33;
-        background-color: rgba(255, 255, 255, 0.8);
-        padding: 20px;
-        border-radius: 10px;
-        margin: 20px auto;
-        width: 80%;
-        max-width: 500px;
-      "
-    >
-      <h1>公告：4.13好像要体考</h1>
-    </div>
-    <div
-      style="
+      /* 卡片通用样式 */
+      .card {
+        background: rgba(255, 255, 255, 0.95);
+        padding: 50px 30px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(123, 31, 162, 0.15);
         text-align: center;
-        color: #001a33;
-        background-color: rgba(255, 255, 255, 0.8);
-        padding: 20px;
-        border-radius: 10px;
-        margin: 20px auto;
-        width: 80%;
         max-width: 500px;
-      "
-    >
-      <h1>老师名单：</h1>
-      <ul style="list-style-type: none; padding: 0; columns: 2; gap: 20px">
-        <li>老班（数学）：张明辉</li>
-        <li>语文：钱丽冰</li>
-        <li>英语：冉林衢</li>
-        <li>体育：...(待补充)</li>
-        <li>音乐：赵贵辉</li>
-        <li>美术：隆星月</li>
-        <li>信息技术：...(待补充)</li>
-        <li>生物：罗圆</li>
-        <li>化学：叶躬旭</li>
-        <li>物理：姜浪（姜三良）</li>
-        <li>政治：张成</li>
-        <li>历史：钟明生</li>
-        <li>地理：徐波</li>
-      </ul>
-      <h1>班级成员名单：</h1>
-      <ul
-        style="
-          list-style-type: none;
-          padding: 0;
-          columns: 2;
-          gap: 20px;
-          max-width: 500px;
-        "
-      >
-        <li>吴嘉琪</li>
-        <li>罗艺洋</li>
-        <li>谭海燕</li>
-        <li>吴超</li>
-        <li>易治杰</li>
-        <li>张定春</li>
-        <li>杨儒涛</li>
-        <li>陶燕</li>
-        <li>王瑞</li>
-        <li>黄玉婷</li>
-        <li>陈明阳</li>
-        <li>彭鑫悦</li>
-        <li>颜靖</li>
-        <li>吴浩然</li>
-        <li>程正圣</li>
-        <li>程熙文</li>
-        <li>王秋婷</li>
-        <li>罗骄</li>
-        <li>彭红福</li>
-        <li>王庆博</li>
-        <li>吴楠</li>
-        <li>杨刚</li>
-        <li>杨凌轩</li>
-        <li>刘思瑶</li>
-        <li>蒲美丽</li>
-        <li>李浩宇</li>
-        <li>黄俊</li>
-        <li>刘仁刚</li>
-        <li>杨欣怡</li>
-        <li>易君浩</li>
-        <li>覃宇林</li>
-        <li>刘梦琪</li>
-        <li>罗吉睿</li>
-        <li>彭和龙</li>
-        <li>冉伟</li>
-        <li>雷燕</li>
-        <li>王涛</li>
-        <li>朱婷</li>
-        <li>童嘉欣</li>
-        <li>韩正萍</li>
-        <li>王语彤</li>
-        <li>覃悦</li>
-        <li>卓鑫</li>
-        <li>覃孟</li>
-        <li>姚威</li>
-        <li>余永洪</li>
-        <li>陈艳</li>
-        <li>杨诗勇</li>
-        <li>谭国涛</li>
-        <li>郑昌品</li>
-      </ul>
+        width: 90%;
+        z-index: 10;
+        transition: all 0.5s ease;
+      }
+      /* 日期选择界面 */
+      .date-select h2 {
+        color: #7b1fa2;
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+      }
+      .select-group {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-bottom: 30px;
+      }
+      select {
+        padding: 12px 20px;
+        border: 2px solid #e0c3fc;
+        border-radius: 50px;
+        font-size: 1.1rem;
+        color: #555;
+        background: #f8f5ff;
+        cursor: pointer;
+        outline: none;
+        transition: border-color 0.3s ease;
+      }
+      select:focus {
+        border-color: #8ec5fc;
+      }
+      /* 按钮样式 */
+      .btn {
+        background: linear-gradient(45deg, #7b1fa2, #2196f3);
+        color: white;
+        border: none;
+        padding: 12px 35px;
+        border-radius: 50px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 15px rgba(123, 31, 162, 0.2);
+      }
+      .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(123, 31, 162, 0.3);
+      }
+      .btn:active {
+        transform: translateY(1px);
+      }
+      /* 提示文字 */
+      .tip {
+        margin-top: 15px;
+        font-size: 0.9rem;
+        color: #888;
+        height: 20px;
+      }
+      .error {
+        color: #e53935;
+      }
+      /* 祝福界面（初始隐藏） */
+      .blessing-card {
+        display: none;
+      }
+      .blessing-card h1 {
+        color: #7b1fa2;
+        font-size: 2.2rem;
+        margin-bottom: 25px;
+        text-shadow: 2px 2px 4px rgba(123, 31, 162, 0.1);
+      }
+      .blessing-text {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        margin: 20px 0;
+        color: #555;
+      }
+      /* 爱心背景元素 */
+      .heart {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background: #e0c3fc;
+        transform: rotate(45deg);
+        opacity: 0.7;
+        animation: float 6s linear infinite;
+        z-index: 1;
+      }
+      @keyframes float {
+        0% {
+          transform: rotate(45deg) translateY(100vh) scale(0.5);
+          opacity: 0;
+        }
+        10% {
+          opacity: 0.8;
+        }
+        90% {
+          opacity: 0.8;
+        }
+        100% {
+          transform: rotate(45deg) translateY(-20px) scale(1.2);
+          opacity: 0;
+        }
+      }
+      /* 点击爱心特效 */
+      .click-heart {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background: #9c27b0;
+        transform: rotate(45deg);
+        animation: pop 1s ease-out forwards;
+        z-index: 5;
+      }
+      @keyframes pop {
+        0% {
+          transform: rotate(45deg) scale(1);
+          opacity: 1;
+        }
+        100% {
+          transform: rotate(45deg) scale(0.2) translateY(-50px);
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 日期选择卡片 -->
+    <div class="card date-select" id="dateSelectCard">
+      <h2>猜猜是什么特别的日子？</h2>
+      <div class="select-group">
+        <select id="monthSelect">
+          <option value="">选择月份</option>
+          <option value="1">1月</option>
+          <option value="2">2月</option>
+          <option value="3">3月</option>
+          <option value="4">4月</option>
+          <option value="5">5月</option>
+          <option value="6">6月</option>
+          <option value="7">7月</option>
+          <option value="8">8月</option>
+          <option value="9">9月</option>
+          <option value="10">10月</option>
+          <option value="11">11月</option>
+          <option value="12">12月</option>
+        </select>
+        <select id="daySelect">
+          <option value="">选择日期</option>
+          <!-- 动态生成日期选项（1-31） -->
+        </select>
+      </div>
+      <button class="btn" id="checkBtn">确认</button>
+      <div class="tip" id="tipText"></div>
     </div>
+
+    <!-- 祝福卡片（初始隐藏） -->
+    <div class="card blessing-card" id="blessingCard">
+      <h1>🎂 生日快乐呀！🎂</h1>
+      <div class="blessing-text">
+        恭喜你解锁成功～<br /><br />
+        愿你新的一岁：<br />
+        眼里有光，心里有爱，<br />
+        事事顺心，岁岁欢喜，<br />
+        所有美好都如期而至！<br /><br />
+        4月16日是你的生日,星期四要在学校提前祝你生日快乐，要做最亮的星，要一直快乐呀～✨
+      </div>
+      <button class="btn" id="replayBtn">再看一次</button>
+    </div>
+
     <script>
-      // 设置中考日期
-      var examDate = new Date("2026-06-11T00:00:00");
+      // 核心配置：修改这里为朋友的生日（月份/日期）
+      const BIRTH_MONTH = 4; // 示例：4月（需按实际生日修改）
+      const BIRTH_DAY = 16; // 示例：16日（需按实际生日修改）
 
-      function updateCountdown() {
-        var now = new Date();
-        var timeDiff = examDate - now;
+      // 1. 动态生成日期选项（1-31）
+      const daySelect = document.getElementById("daySelect");
+      for (let i = 1; i <= 31; i++) {
+        const option = document.createElement("option");
+        option.value = i;
+        option.textContent = i + "日";
+        daySelect.appendChild(option);
+      }
 
-        if (timeDiff <= 0) {
-          document.getElementById("countdown-timer").innerHTML =
-            "中考已开始！加油！";
-          clearInterval(countdownInterval);
+      // 2. 日期验证与界面切换
+      const dateSelectCard = document.getElementById("dateSelectCard");
+      const blessingCard = document.getElementById("blessingCard");
+      const checkBtn = document.getElementById("checkBtn");
+      const tipText = document.getElementById("tipText");
+      const replayBtn = document.getElementById("replayBtn");
+      const monthSelect = document.getElementById("monthSelect");
+
+      checkBtn.addEventListener("click", () => {
+        const selectedMonth = parseInt(monthSelect.value);
+        const selectedDay = parseInt(daySelect.value);
+
+        // 验证选择
+        if (!selectedMonth || !selectedDay) {
+          tipText.textContent = "请选择完整日期呀～";
+          tipText.classList.add("error");
           return;
         }
 
-        var days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
-        var hours = Math.floor(
-          (timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
-        );
-        var minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+        // 验证生日是否正确
+        if (selectedMonth === BIRTH_MONTH && selectedDay === BIRTH_DAY) {
+          tipText.textContent = "解锁成功！正在跳转...";
+          tipText.classList.remove("error");
+          // 延迟切换界面（增加仪式感）
+          setTimeout(() => {
+            dateSelectCard.style.display = "none";
+            blessingCard.style.display = "block";
+          }, 1000);
+        } else {
+          tipText.textContent = "好像不是这个日子哦，再试试～";
+          tipText.classList.add("error");
+        }
+      });
 
-        document.getElementById("countdown-timer").innerHTML =
-          days + "天 " + hours + "小时 " + minutes + "分钟 " + seconds + "秒";
+      // 3. 重新播放功能
+      replayBtn.addEventListener("click", () => {
+        blessingCard.style.display = "none";
+        dateSelectCard.style.display = "block";
+        monthSelect.value = "";
+        daySelect.value = "";
+        tipText.textContent = "";
+      });
+
+      // 4. 动态爱心背景（和之前一致）
+      function createHearts() {
+        const heart = document.createElement("div");
+        heart.classList.add("heart");
+        heart.style.left = Math.random() * 100 + "vw";
+        const size = Math.random() * 15 + 10;
+        heart.style.width = size + "px";
+        heart.style.height = size + "px";
+        heart.style.animationDuration = Math.random() * 5 + 3 + "s";
+        heart.style.opacity = Math.random() * 0.5 + 0.3;
+        const colors = ["#e0c3fc", "#8ec5fc", "#9c27b0", "#2196f3", "#ba68c8"];
+        heart.style.background =
+          colors[Math.floor(Math.random() * colors.length)];
+
+        document.body.appendChild(heart);
+        setTimeout(() => heart.remove(), 8000);
       }
+      setInterval(createHearts, 300);
 
-      // 每秒更新一次倒计时
-      var countdownInterval = setInterval(updateCountdown, 1000);
-
-      // 初始化倒计时显示
-      updateCountdown();
+      // 5. 点击屏幕生成爱心特效
+      document.addEventListener("click", (e) => {
+        if (!e.target.closest("select") && !e.target.closest("button")) {
+          const clickHeart = document.createElement("div");
+          clickHeart.classList.add("click-heart");
+          clickHeart.style.left = e.clientX - 15 + "px";
+          clickHeart.style.top = e.clientY - 15 + "px";
+          document.body.appendChild(clickHeart);
+          setTimeout(() => clickHeart.remove(), 1000);
+        }
+      });
     </script>
-    <img
-      style="display: block; margin-left: auto; margin-right: auto"
-      src="sa.jpg"
-      width="400"
-      height="200"
-    />
-    <p
-      style="
-        text-align: center;
-        color: #001a33;
-        background-color: rgba(255, 255, 255, 0.8);
-        padding: 10px;
-        border-radius: 10px;
-        margin: 10px auto;
-        width: 300px;
-        max-width: 500px;
-      "
-    >
-      图片来源：刘思瑶
-    </p>
-    <p
-      style="
-        text-align: center;
-        color: #001a33;
-        background-color: rgba(255, 255, 255, 0.8);
-        padding: 10px;
-        border-radius: 10px;
-        margin: 10px auto;
-        width: 300px;
-        max-width: 500px;
-      "
-    >
-      祝福语：愿我们在中考中发挥出色，取得优异的成绩！加油，初三四班的同学们！
-    </p>
-    <p
-      style="
-        text-align: center;
-        color: #001a33;
-        background-color: rgba(255, 255, 255, 0.8);
-        padding: 10px;
-        border-radius: 10px;
-        margin: 10px auto;
-        width: 300px;
-        max-width: 500px;
-      "
-    >
-      本网站还需改进，请提出改进意见！
-    </p>
-    <p
-      style="
-        text-align: center;
-        color: #001a33;
-        background-color: rgba(255, 255, 255, 0.8);
-        padding: 10px;
-        border-radius: 10px;
-        margin: 10px auto;
-        width: 300px;
-        max-width: 500px;
-      "
-    >
-      作者:qm
-    </p>
   </body>
 </html>
